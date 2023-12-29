@@ -5,7 +5,7 @@ import { ValidationPipe } from '@nestjs/common';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.useGlobalPipes(new ValidationPipe({
-    whitelist: true, // it helps to filter unnecessary fields in the API.
+    whitelist: true, // it helps to filter unnecessary fields from an incomming API or DTO.
     transform: true,
     forbidNonWhitelisted: true,
   }));
