@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity()
+@Entity()//it allows typeorm to create a sql table
 export class Coffee {
     @PrimaryGeneratedColumn()
     id: number;
